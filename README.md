@@ -3,7 +3,7 @@
 ![Calyptus](https://github.com/gonzalolater/8.-Advanced-Security-Calyptus/assets/42863568/d0dfa841-8e0f-4dce-b6b1-58c362dabd5c)
 # Units
 - Re-entrancy
-- Oracle Manioulation
+- Oracle Maniopulation
 - Frontrunning
 - Timestamp Manipulation
 - Insecure Arithmetic
