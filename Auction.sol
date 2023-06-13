@@ -1,3 +1,7 @@
+// Unexpected Revert DoS
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.9;
+
 contract Auction {
    address frontRunner;
    uint256 highestBid;
